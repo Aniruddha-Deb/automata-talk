@@ -1,7 +1,6 @@
 \documentclass{beamer}
 \usetheme{Boadilla}
-\usepackage{xcolor}
-\usepackage{caption}
+\usepackage{xcolor} \usepackage{caption}
 \usepackage{tikz}
 \usepackage{hyperref}
 
@@ -293,14 +292,14 @@ conditions.
 rules on the Moore neighbourhood $N$ of a cell $C$:
 \pause
 \begin{itemize}
-\item{If $C$ is dead, and exactly 2 or 3 cells in $N$ are alive, then $C$ becomes
+\item{If $C$ is dead, and exactly 3 cells in $N$ are alive, then $C$ becomes
 alive in the next iteration i.e. $C$ \textbf{is born}}
 \pause
-\item{If $C$ is alive, and exactly 3 cells in $N$ are alive, then $C$ remains 
+\item{If $C$ is alive, and exactly 2 or 3 cells in $N$ are alive, then $C$ remains 
 alive in the next iteration i.e. $C$ \textbf{survives}}
 \end{itemize}
 \pause
-These rules can be summarized as \textbf{B23/S3}. Variations of this rule set
+These rules can be summarized as \textbf{B3/S23}. Variations of this rule set
 give several other automata. What's interesting about Life is that it's stable:
 it doesn't explode or decay very fast. \\~\\
 \pause
@@ -309,12 +308,6 @@ and Life is Undecidable: you cannot predict the initial state from the final
 state, or directly compute n states into the future (as a consequence of the 
 Halting problem).
 \end{flushleft}
-\end{frame}
-
-\begin{frame}
-\begin{center}
-\includegraphics[scale=0.3]{img/aaghaz_math_meme}
-\end{center}
 \end{frame}
 
 \begin{frame}
@@ -328,6 +321,8 @@ Halting problem).
 \item{Gliders}
 \pause
 \item{Spaceships}
+\pause
+\item{Methuselahs}
 \pause
 \item{Glider Gun}
 \end{itemize}
